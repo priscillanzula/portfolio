@@ -162,7 +162,7 @@ header h1 strong {
   display: block;
   text-align: left;
   font-weight: normal;
-  /* border-bottom: 1px solid #a51d1d; */
+
 }
 
 .dropdown-content a:hover {
@@ -265,7 +265,6 @@ header h1 strong {
 }
 
 .education-container .card p {
-  /* font-size: 14px; */
   margin: 5px 0;
   color: rgb(243, 237, 237);
   font-style: bold;
@@ -486,7 +485,6 @@ header h1 strong {
 }
 
 .technical-interests li {
-  /* display: flex; */
   align-items: center;
   margin-bottom: 15px;
   color: #adb1b4;
@@ -561,10 +559,6 @@ footer form {
   border: 1px solid #1386d3;
   border-radius: 5px;
 }
-/* footer form label {
-    margin: 10px 0 5px;
-    color: #070202e1;
-} */
 
 footer form input,
 footer form textarea {
