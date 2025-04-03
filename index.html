@@ -28,8 +28,16 @@
         <a href="#contact" class="get-in-touch-btn">Get in Touch</a>
         <hr>
         <nav>
-            <a href="#about">About</a>
-            <div class="dropdown">
+            <div class="sidebar">
+            <a class="close-button" onclick=hideSidebar() href="#"><img src="./images/close-button.svg" alt="close button"></a>
+            <a href="#about" onclick=hideSidebar()>About</a>
+            <a href="#projects" onclick=hideSidebar()>Projects</a>
+            <a href="#education" onclick=hideSidebar()>Education</a>
+            <a href="#contact" onclick=hideSidebar()>Contact</a>
+            </div>
+            <div class="nav">
+            <a class="hideOnMobile" href="#about">About</a>
+            <div class="dropdown hideOnMobile">
                 <a href="#projects" class="dropdown-btn">Projects</a>
                 <div class="dropdown-content">
                     <a href="https://github.com/priscillanzula/pro_realty.git" rel="noopener" target="_blank">Pro
@@ -38,8 +46,10 @@
                         target="_blank">SyriaTel Churn Analysis</a>
                 </div>
             </div>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact</a>
+            <a class="hideOnMobile" href="#education">Education</a>
+            <a class="hideOnMobile" href="#contact">Contact</a>
+            <a class="menu-button" onclick=showSidebar() href="#"><img src="./images/menu-button.svg" alt="menu button"></a>
+            </div>
         </nav>
     </header>
     <!-- Main Content -->
@@ -226,6 +236,19 @@
                 <i class="fab fa-github" title="Github"></i>
             </a>
         </footer>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar');
+
+                sidebar.style.display = 'none'
+            }
+        </script>
 </body>
 
 </html>
