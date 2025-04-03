@@ -1,6 +1,7 @@
 # Priscilla Nzula's Portfolio
 
 A personal portfolio website showcasing my data analysis projects, skills, and professional experience.
+https://priscillanzula.github.io/portfolio/
 
 ## 📋 Overview
 
